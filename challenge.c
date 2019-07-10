@@ -9,19 +9,21 @@ int main (int argc, char*argv[]){
     {
       //  printf("%d\n", i);
         printf("%s\n", argv[i]); 
-     }   
-     /*
-        if(argc == 5){
-            printf("%d est egal a 5\n",argc);
-        }else if(argc < 5){
-            printf("%d est inferieur a 5\n",argc);
-        }else {
-            printf("%d est superieur a 5\n", argc);
-        } */
-   
-    
+      
 
+     int x ;
+     x = atoi(argv[i]); //convertit le ième élément de argv en valeur numérique
+     
+        if(x == 5){
+            printf("est egal a 5\n");
 
+        } else if(x < 5){
+            printf("est inferieur a 5\n");
 
+        }else if (x > 5){
+            printf("est superieur a 5\n");
+        } 
+    }
     return 0;
-}
+    
+ } 
